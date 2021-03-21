@@ -1,0 +1,17 @@
+{
+  "name": "aventador",
+  "description": "an algotrading bot for FTX",
+  "repository": "https://github.com/pnyda5693/aventador",
+  "buildpacks": [
+    {
+      "url": "https://github.com/emk/heroku-buildpack-rust"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "hobby"
+    }
+  },
+  "stack": "container"
+}

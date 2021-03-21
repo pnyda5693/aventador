@@ -1,0 +1,29 @@
+[package]
+name = "aventador"
+version = "0.1.0"
+authors = ["pnyda5693 <70046757+pnyda5693@users.noreply.github.com>"]
+edition = "2018"
+
+[dependencies]
+chrono = "0.4.19"
+uuid = { version = "0.8.2", features = ["v4"] }
+fxdb = { git = "https://github.com/pnyda5693/fxdb", branch = "master" }
+lazy_static = "1.4"
+async-trait = "0.1.45"
+futures = "0.3.13"
+tokio = { version = "1.2", features = ["full"] }
+plotters = "0.3.0"
+tokio-tungstenite = { version = "0.14.0", features = ["native-tls"] }
+reqwest = { version = "0.11", features = ["json"] }
+ring = "0.16.20"
+serde_json = "1.0.64"
+url = "2.2.1"
+hex = "0.4.3"
+tokio-tls = "0.3.1"
+log = "0.4.14"
+env_logger = "0.8.3"
+statrs = "0.13.0"
+sqlx = { version = "0.5", features = ["postgres", "runtime-tokio-native-tls", "macros", "chrono"] }
+
+[profile.release]
+overflow-checks = true
